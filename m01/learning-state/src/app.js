@@ -7,7 +7,7 @@ import Timer from "./timer";
 
 class App extends Component {
   constructor() {
-    console.log("constructor");
+    console.log("constructor App");
 
     super();
     this.state = {
@@ -19,15 +19,15 @@ class App extends Component {
   //Antes de renderizar o componente
   //Executa do lado do servidor e do frontend
   componentWillMount() {
-    console.log("componentWillMount");
+    console.log("componentWillMount App");
   }
   //Depois de renderizar o component
   //Executa somente do lado do frontend
   componentDidMount() {
-    console.log("componentDidMount");
+    console.log("componentDidMount App");
   }
   render() {
-    console.log("render");
+    console.log("render App");
     return (
       <div>
         <Square color={this.state.color} />
