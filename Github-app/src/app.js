@@ -8,12 +8,16 @@ const App = () => (
     </div>
 
     <div className="user-info">
-      <img
-        src="https://avatars1.githubusercontent.com/u/39008435?v=4"
-        alt="user avatar"
-      />
+      <div className="avatar-user">
+        <img
+          src="https://avatars1.githubusercontent.com/u/39008435?v=4"
+          alt="user avatar"
+        />
+      </div>
       <h2>
-        <a href="https://github.com/benits">Matheus Benites</a>
+        <a className="user-name" href="https://github.com/benits">
+          Matheus Benites
+        </a>
       </h2>
 
       <ul className="repos-info">
@@ -31,10 +35,14 @@ const App = () => (
         <h2>Repositórios</h2>
         <ul>
           <li>
-            <a href="">Nome do Repositório</a>
+            <a href="">
+              <span> Nome do Repositório</span>
+            </a>
           </li>
           <li>
-            <a href="">Nome do Repositório</a>
+            <a href="">
+              <span> Nome do Repositório</span>
+            </a>
           </li>
         </ul>
       </div>
