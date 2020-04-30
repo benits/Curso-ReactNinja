@@ -17,6 +17,10 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .search {
   margin-bottom: 30px;
 }
@@ -25,8 +29,18 @@ body {
   font-size: 30px;
   padding: 10px;
   width: 100%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 2px rgb(219, 219, 219);
 }
 
+.search input:focus {
+  outline: none;
+}
+.user-info {
+  padding: 8px;
+}
 .user-info img {
   float: left;
   margin: 0 20px 20px 0;
@@ -58,6 +72,7 @@ ul {
 .starred {
   float: left;
   width: 100%;
+  padding: 8px;
 }
 
 .actions {

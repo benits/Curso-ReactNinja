@@ -1,65 +1,52 @@
 "use strict";
-import React from "react";
+import React, { Component } from "react";
 
-const App = () => (
-  <div>
-    <div className="search">
-      <input type="search" placeholder="Digite o nome de usuário no GitHub" />
-    </div>
+import AppContent from "./components/AppContent";
 
-    <div className="user-info">
-      <div className="avatar-user">
-        <img
-          src="https://avatars1.githubusercontent.com/u/39008435?v=4"
-          alt="user avatar"
-        />
-      </div>
-      <h2>
-        <a className="user-name" href="https://github.com/benits">
-          Matheus Benites
-        </a>
-      </h2>
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      userInfo: {
+        username: "Matheus Benites",
+        login: "benits",
+        photo: "https://avatars1.githubusercontent.com/u/39008435?v=4",
+        repos: 12,
+        followers: 10,
+        following: 10,
+      },
+      repos: [
+        {
+          name: "Nome do Repositório",
+          link: "#",
+        },
+        {
+          name: "Nome do Repositório",
+          link: "#",
+        },
+      ],
+      starred: [
+        {
+          name: "Nome do Repositório",
+          link: "#",
+        },
+        {
+          name: "Nome do Repositório",
+          link: "#",
+        },
+      ],
+    };
+  }
 
-      <ul className="repos-info">
-        <li>Repositórios: 32</li>
-        <li>Seguidores: 32</li>
-        <li>Seguindo: 32</li>
-      </ul>
-
-      <div className="actions">
-        <button>Ver Repositórios</button>
-        <button>Ver Favoritos</button>
-      </div>
-
-      <div className="repos">
-        <h2>Repositórios</h2>
-        <ul>
-          <li>
-            <a href="">
-              <span> Nome do Repositório</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span> Nome do Repositório</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="starred">
-        <h2>Favoritos</h2>
-        <ul>
-          <li>
-            <a href="">Nome do favorito</a>
-          </li>
-          <li>
-            <a href="">Nome do favorito</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-);
+  render() {
+    return (
+      <AppContent
+        userInfo={this.state.userInfo}
+        rep={this.state.repos}
+        star={this.state.starred}
+      />
+    );
+  }
+}
 
 export default App;
