@@ -2,8 +2,6 @@
 import React, { PropTypes } from "react";
 
 const UserInfo = ({ userInfo }) => {
-  console.log(userInfo);
-
   return (
     <div className="user-info">
       <div className="avatar-user">
@@ -18,6 +16,8 @@ const UserInfo = ({ userInfo }) => {
         </a>
       </h2>
 
+      <p>{userInfo.bio}</p>
+
       <ul className="repos-info">
         <li>Repositórios: {userInfo.repos}</li>
         <li>Seguidores: {userInfo.followers}</li>
@@ -31,6 +31,7 @@ UserInfo.propTypes = {
   userInfo: PropTypes.shape({
     username: PropTypes.string.isRequired,
     login: PropTypes.string.isRequired,
+    bio: PropTypes.string,
     photo: PropTypes.string.isRequired,
     repos: PropTypes.number.isRequired,
     followers: PropTypes.number.isRequired,
