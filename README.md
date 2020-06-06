@@ -1,7 +1,5 @@
 <h1 align="center">
-	
     <img alt="CursoReactNinja" title="CursoReactNinja" src="https://blog.da2k.com.br/uploads/2016/05/curso-reactjs-ninja.png" width="700px" />
-
 </h1>
 
 <h4 align="center"> 
@@ -27,7 +25,7 @@
 </p>
 
 <p align="center">
-  <a href="#-papodedev">Blog Papo de Dev</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-reactninja">Curso React Ninja</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-Technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-how-to-use">How to use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
