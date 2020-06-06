@@ -32,14 +32,17 @@
   <a href="#memo-license">License</a>
 </p>
 
-## :information_source: React Ninja?
+## :information_source: Curso React Ninja?
 O curso para se tornar um ninja em React, e todas as ferramentas do ecossistema!
 
-Esse curso está em andamento, e está em pré-venda! Para entender como funciona o andamento do curso, acesse o repositório no GitHub, em /da2k/curso-reactjs-ninja =)
+O Curso React.js Ninja é para aqueles desenvolvedores que querem crescer como programadores na área de desenvolvimento web. Nesse curso será abordado não só sobre a lib React.js em si, mas todas as ferramentas e técnicas do ecossistema ao seu redor: redux, react-router, Server Side Rendering, programação funcional, testes, etc.
+
+O curso está em andamento, e está sendo separado por módulos. Para acompanhar a ementa de cada módulo, e todos os códigos utilizados, acesso o repositório do curso, entrando no GitHub, e acessando /da2k/curso-reactjs-ninja.
+
+neste curso abordamos não apenas a biblioteca React.js em si, mas também todo o ecossistema em volta da ferramenta: testes para componentes, gerenciamento de estados, rotas, renderização do lado do servidor, configurações específicas para agilizar o desenvolvimento, e configurações para performar da melhor forma possível quando entregar um projeto com React em produção.
 
 os arquivos neste repositório são refentes aos arquivos criados durante o curso React Ninja do Fernando Daciuk
 
-Informações sobre o curso: http://blog.da2k.com.br/curso-reactjs-ninja/
 
 ## :rocket: Technologies
 
