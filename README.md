@@ -46,6 +46,7 @@ Informações sobre o curso: http://blog.da2k.com.br/curso-reactjs-ninja/
 This project was developed with the following technologies:
 
 - [React][reactjs]
+- [Webpack](https://webpack.js.org/)
 
 
 ## :memo: License
