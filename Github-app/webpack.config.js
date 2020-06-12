@@ -11,13 +11,13 @@ module.exports = validate({
     "react-hot-loader/patch",
     "webpack-dev-server/client?http://localhost:3000",
     "webpack/hot/only-dev-server",
-    path.join(__dirname, "src", "index")
+    path.join(__dirname, "src", "index"),
   ],
 
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/static/"
+    publicPath: "/static/",
   },
 
   plugins: [new webpack.HotModuleReplacementPlugin()],
@@ -28,8 +28,8 @@ module.exports = validate({
         test: /\.js$/,
         exclude: /node_modules/,
         include: /src/,
-        loader: "standard"
-      }
+        loader: "standard",
+      },
     ],
 
     loaders: [
@@ -37,8 +37,8 @@ module.exports = validate({
         test: /\.js$/,
         exclude: /node_modules/,
         include: /src/,
-        loader: "babel"
-      }
-    ]
-  }
+        loader: "babel",
+      },
+    ],
+  },
 });

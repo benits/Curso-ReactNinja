@@ -6,22 +6,26 @@ import UserInfo from "../UserInfo";
 import Actions from "../Actions";
 import Repos from "../Repos";
 
-const AppContent = ({ userInfo, rep, star, handleSearch, getRepos }) => {
-  return (
-    <div>
-      <Search handleSearch={handleSearch} />
-      {!!userInfo && <UserInfo userInfo={userInfo} />}
-      {!!userInfo && <Actions getRepos={getRepos} />}
-
-      {!!rep.length && (
-        <Repos className="repos" title="Repositórios" repos={rep} />
-      )}
-      {!!star.length && (
-        <Repos className="starred" title="Favoritos" repos={star} />
-      )}
-    </div>
-  );
-};
+const AppContent = ({
+  userInfo,
+  rep,
+  star,
+  handleSearch,
+  getRepos,
+  getStarred,
+}) => (
+  <div>
+    <Search handleSearch={handleSearch} />
+    {!!userInfo && <UserInfo userInfo={userInfo} />}
+    {!!userInfo && <Actions getRepos={getRepos} getStarred={getStarred} />}
+    {!!rep.length && (
+      <Repos className="repos" title="Repositórios" repos={rep} />
+    )}
+    {!!star.length && (
+      <Repos className="starred" title="Favoritos" repos={star} />
+    )}
+  </div>
+);
 
 AppContent.propTypes = {
   userInfo: PropTypes.object,
