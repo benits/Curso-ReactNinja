@@ -2,8 +2,7 @@
     <img alt="CursoReactNinja" title="CursoReactNinja" src="https://blog.da2k.com.br/uploads/2016/05/curso-reactjs-ninja.png" width="700px" />
 </h1>
 
-<<<<<<< HEAD
-=======
+
 <h4 align="center"> 
 	:construction: Curso React Ninja 🚀 in progress.. :construction:
 </h4>
