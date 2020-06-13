@@ -1,6 +1,7 @@
 "use strict";
 import ajax from "@fdaciuk/ajax";
 import React, { Component } from "react";
+
 import AppContent from "./components/AppContent";
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
       userInfo: null,
       repos: [],
       starred: [],
+      isFetching: false,
     };
   }
 
@@ -23,10 +25,11 @@ class App extends Component {
     const value = e.target.value;
     const KeyCode = e.wich || e.keyCode;
     const ENTER = 13;
-    const target = e.target;
 
     if (KeyCode === ENTER) {
-      target.disabled = true;
+      this.setState({
+        isFetching: true,
+      });
       ajax()
         .get(this.getGithubApiUrl(value))
         .then((result) => {
@@ -43,7 +46,9 @@ class App extends Component {
           });
         })
         .always(() => {
-          target.disabled = false;
+          this.setState({
+            isFetching: false,
+          });
         });
     }
   }
@@ -75,6 +80,7 @@ class App extends Component {
         handleSearch={(e) => {
           this.handleSearch(e);
         }}
+        isFetching={this.state.isFetching}
       />
     );
   }
