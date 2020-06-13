@@ -40,7 +40,6 @@ O curso está em andamento, e está sendo separado por módulos. Para acompanhar
 
 neste curso abordamos não apenas a biblioteca React.js em si, mas também todo o ecossistema em volta da ferramenta: testes para componentes, gerenciamento de estados, rotas, renderização do lado do servidor, configurações específicas para agilizar o desenvolvimento, e configurações para performar da melhor forma possível quando entregar um projeto com React em produção.
 
->>>>>>> 1cebea67bfbbde7395c2c736f357022916d3952e
 os arquivos neste repositório são refentes aos arquivos criados durante o curso React Ninja do Fernando Daciuk
 
 
